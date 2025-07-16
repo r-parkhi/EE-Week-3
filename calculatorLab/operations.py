@@ -1,20 +1,21 @@
 # operations.py
-from .utils import log_call
+from calculatorLab.utils import log_call;
 
-#TODO: define add, sub, mul, div functions
 @log_call
 def add(a, b):
-    pass 
+    return a + b; 
 
 @log_call
 def sub(a, b):
-    pass
+    return a - b; 
 
 @log_call
 def mul(a, b):
-    pass
+    return a * b; 
 
 @log_call
 def div(a, b):
-    #add a case for dividing by zero
-    pass
+    if b == 0:
+        return "undefined";
+    else:
+        return a / b;
